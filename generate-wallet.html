@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-	<title>Phore Paper Wallet Generator</title>
+	<title>Curium Paper Wallet Generator</title>
 	<!--
     
 Notice of Copyrights and Licenses:
@@ -44,19 +44,19 @@ Notice of Copyrights and Licenses:
 	WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE 
 	SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-	GitHub Repository: https://github.com/phoreproject/Paper-Wallet.git
+	GitHub Repository: https://github.com/curiumproject/Paper-Wallet.git
 	-->
 
 	<meta charset="utf-8">
 
 <script type="text/javascript">
 
-// Basic initialization and switching for Phore to Bitcoin
+// Basic initialization and switching for Curium to Bitcoin
 function setCryptoCurrency(toThis) {
 	window.currencyName = toThis;
 	switch (toThis)
 	{
-	case 'Phore':	
+	case 'Curium':	
 	  window.networkVersion = 0x37;
 	  window.privateKeyPrefix = 0xD4;
 	  window.WIFPrefix = '8';
@@ -70,8 +70,8 @@ function setCryptoCurrency(toThis) {
 		document.title = 'Bitcoin paper wallet generator';
 		break;
 	default:
-	  alert ('Invalid cryptocurrency "' + toThis + '" at initialization. Defaulting to Phore.');
-	  setCryptoCurrency('Phore');		
+	  alert ('Invalid cryptocurrency "' + toThis + '" at initialization. Defaulting to Curium.');
+	  setCryptoCurrency('Curium');		
 	} // eof switch
 	return (true);
 }
@@ -91,7 +91,7 @@ switch (myDesign) {
 		setCryptoCurrency('Bitcoin');
 		break;
 	default:
-	setCryptoCurrency('Phore');
+	setCryptoCurrency('Curium');
 	window.suppliesURL = 'https://bitcoinpaperwallet.com/#purchase'; // remove special currency flag
 } 
 
@@ -9896,7 +9896,7 @@ Bitcoin.Util = {
 		}
 		
 		.right { text-align: right; }
-		.walletarea { display: none; border-top: 2px solid #00cd8c; } /* Phore 'Purple' #00cd8c */
+		.walletarea { display: none; border-top: 2px solid #00cd8c; } /* Curium 'Purple' #00cd8c */
 		.keyarea { font-family: Courier New; height: 110px; text-align: left; position: relative; padding: 5px; }
 		.keyarea .public { float: left; }
 		.keyarea .pubaddress { display: inline-block; height: 40px; padding: 0 0 0 10px; float: left; }
@@ -9912,7 +9912,7 @@ Bitcoin.Util = {
 		
 		h1 { font-size: 24px; font-weight: 100; color: #01a66c; margin:0 0 10px 0; padding:0; }
 		
-		a, a:visited { text-decoration: none; color: #00cd8c; } /* Phore 'Purple' #00cd8c */
+		a, a:visited { text-decoration: none; color: #00cd8c; } /* Curium 'Purple' #00cd8c */
 		a:hover {color: #0000FF; text-decoration: underline;} /* Royal Blue */
 
 
@@ -10461,7 +10461,7 @@ Bitcoin.Util = {
 						<span id="instructions2">
                         <!-- <p style="margin-top: 0;"><strong>Select the wallet you want to create</strong>
                           <select name="designPicker" id="designPicker" style="font-size: 12px;" onChange="setDesign(this.value, false);">
-                            <option value="default">Phore Paper Wallet</option>
+                            <option value="default">Curium Paper Wallet</option>
                             
                           </select>
                           <select name="langPicker" id="langPicker" style="font-size: 12px; display: inline;" onChange="setDesign('default', false, this.value);">
@@ -10627,36 +10627,36 @@ Bitcoin.Util = {
                   Denomination: 
                   <select id="backDenominationSelect" onChange="setDenomination(this.value);">
                     <option value="">*** None ***</option>
-                    <option value="10000 PHR">10000 PHR</option>
-                    <option value="5000 PHR">5000 PHR</option>
-                    <option value="2000 PHR">2000 PHR</option>
-                    <option value="1000 PHR">1000 PHR</option>
-                    <option value="50000 mPHR">50000 mPHR</option>
-                    <option value="10000 mPHR">10000 mPHR</option>
-                    <option value="5000 mPHR">5000 mPHR</option>
-                    <option value="1000 mPHR">1000 mPHR</option>
-                    <option value="500 mPHR">500 mPHR</option>
-                    <option value="100 mPHR">100 mPHR</option>
-                    <option value="50000 yPHR">50000 yPHR</option>
-                    <option value="10000 yPHR">10000 yPHR</option>
-                    <option value="5000 yPHR">5000 yPHR</option>
-                    <option value="1000 yPHR">1000 yPHR</option>
-                    <option value="500 yPHR">500 yPHR</option>
-                    <option value="100 yPHR">100 yPHR</option>
-                    <option value="50 yPHR">50 yPHR</option>
-                    <option value="20 yPHR">20 yPHR</option>
-                    <option value="10 yPHR">10 yPHR</option>
-                    <option value="5 yPHR">5 yPHR</option>
-                    <option value="1 yPHR">1 yPHR</option>
+                    <option value="10000 CRU">10000 CRU</option>
+                    <option value="5000 CRU">5000 CRU</option>
+                    <option value="2000 CRU">2000 CRU</option>
+                    <option value="1000 CRU">1000 CRU</option>
+                    <option value="50000 mCRU">50000 mCRU</option>
+                    <option value="10000 mCRU">10000 mCRU</option>
+                    <option value="5000 mCRU">5000 mCRU</option>
+                    <option value="1000 mCRU">1000 mCRU</option>
+                    <option value="500 mCRU">500 mCRU</option>
+                    <option value="100 mCRU">100 mCRU</option>
+                    <option value="50000 yCRU">50000 yCRU</option>
+                    <option value="10000 yCRU">10000 yCRU</option>
+                    <option value="5000 yCRU">5000 yCRU</option>
+                    <option value="1000 yCRU">1000 yCRU</option>
+                    <option value="500 yCRU">500 yCRU</option>
+                    <option value="100 yCRU">100 yCRU</option>
+                    <option value="50 yCRU">50 yCRU</option>
+                    <option value="20 yCRU">20 yCRU</option>
+                    <option value="10 yCRU">10 yCRU</option>
+                    <option value="5 yCRU">5 yCRU</option>
+                    <option value="1 yCRU">1 yCRU</option>
                     <option value="other">Other...</option>
                   </select>
                   <div id="backDenominationOther" style="display: none;">
                   <input id="backDenominationOtherAmount" maxlength="5" size="6" value="1" onChange="setDenomination('other');">
                   <select id="backDenominationOtherUnit" onChange="setDenomination('other');">
-                    <option value="PHR">PHR</option>
-                  	<option value="yPHR">yPHR</option>
-                  	<option value="&mu;PHR">&mu;PHR</option>
-                  	<option value="mPHR">mPHR</option>
+                    <option value="CRU">CRU</option>
+                  	<option value="yCRU">yCRU</option>
+                  	<option value="&mu;CRU">&mu;CRU</option>
+                  	<option value="mCRU">mCRU</option>
                   </select>
                   </div><!-- end backDenominationOther -->
                               </div>
@@ -10710,7 +10710,7 @@ Bitcoin.Util = {
                   </div><!-- end backLongText -->
                 </div><!-- end backText -->
 
-				<img id="backsvg1" class="backsvg" src="./images/back-300dpi-PHR.jpg">
+				<img id="backsvg1" class="backsvg" src="./images/back-300dpi-CRU.jpg">
 			</div><!-- end backarea -->
 
 
@@ -10755,7 +10755,7 @@ Bitcoin.Util = {
                         
 						<h1><span id="instructions18">How to withdraw funds from your wallet:</span></h1>
 
-						<span id="instructions19">You should expect to withdraw the entire balance of the wallet by importing it (or "sweeping" it) to a live wallet, e.g. a Phore Wallet or Bitcoin wallet application or online service like blockchain.info or coinbase.com.
+						<span id="instructions19">You should expect to withdraw the entire balance of the wallet by importing it (or "sweeping" it) to a live wallet, e.g. a Curium Wallet or Bitcoin wallet application or online service like blockchain.info or coinbase.com.
                         <br />
                         <br />
                         <strong>If you elected to BIP38-encrypt your wallet</strong>, you may need to recover your unencrypted WIF "Wallet Import Format" private key by using the "validate" tab on this web page.
@@ -10780,7 +10780,7 @@ Bitcoin.Util = {
 			<div class="instructionsarea">	
 					<h1>Validate or decrypt private key</h1>
 					<div style="width: 45%; float: left; padding: 0 15px; border-right: 3px solid #ccc;">
-                    	<p><em>This feature works for private keys made here as well as those generated using any other Phore or Bitcoin service or software, e.g. bitaddress.org or brainwallet.org</em></p>
+                    	<p><em>This feature works for private keys made here as well as those generated using any other Curium or Bitcoin service or software, e.g. bitaddress.org or brainwallet.org</em></p>
 						<p><strong>Enter or <a onClick="ninja.wallets.detailwallet.qrscanner.start()">scan</a> any private key to verify that the key is valid</strong> and show its corresponding public key. If your private key validates, then you may be reassured that you will able to retrieve any funds sent to that wallet.</p>
 						<p><strong>To duplicate or BIP38-encrypt any paper wallet</strong>, just validate its private key and click the "Use these details to print a paper wallet" button.</p>
  						<p><strong>Is your wallet BIP38 encrypted?</strong> If so, you can use this form to decrypt your private key and recover the standard Wallet Import Format (WIF) key suitable for wallet software and services that don't directly support BIP38 importing.</p>
@@ -10902,15 +10902,15 @@ Bitcoin.Util = {
 					<span class="item" id="footerlabeldonations"><b>Donations keep this service open &amp; free!</b></span>
                     <span class="item" style="font-size: 11px; font-family: 'Courier New', Courier, monospace;">
                     <strong>Bitcoin</strong>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;16NZTDjBQfTzFdBfwaS2JGBkfgTFTVZxAp<br />
-                    <strong>Phore</strong>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PSNp3LDTsvUdrPwV5o5YracEhzAD9ce4aB<br /></span>
+                    <strong>Curium</strong>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PSNp3LDTsvUdrPwV5o5YracEhzAD9ce4aB<br /></span>
 
 
 				</div>
 			</div>
 
             	<span class="item"><b>Security</b></span>
-                <span class="item" style="font-size: 90%;">For secure wallet generation, do not print wallets "live" from paper.phore.io<br />Instead, download this generator from GitHub and run the HTML as a "local" file:</span>
-				<span class="item"><a href="https://github.com/phoreproject/Paper-Wallet" target="_blank" id="footerlabelgithub"><strong>Secure Download</strong> (GitHub ZIP file)</a></span>
+                <span class="item" style="font-size: 90%;">For secure wallet generation, do not print wallets "live" from paper.curium.io<br />Instead, download this generator from GitHub and run the HTML as a "local" file:</span>
+				<span class="item"><a href="https://github.com/curiumproject/Paper-Wallet" target="_blank" id="footerlabelgithub"><strong>Secure Download</strong> (GitHub ZIP file)</a></span>
                 
                 
 			</div>
@@ -11578,7 +11578,7 @@ ninja.publicKey = {
 		translations: {
 			"en": {
 				// javascript alerts or messages
-				"paperlabelbitcoinaddress": "Phore:",
+				"paperlabelbitcoinaddress": "Curium:",
 				"paperlabelprivatekey": "Private Key (Wallet Import Format):",
 				"paperlabelencryptedkey": "Encrypted Private Key (Password required)",
 				"bip38alertpassphraserequired": "Passphrase required for BIP38 key",
@@ -13432,14 +13432,14 @@ function setDesign (whichDesign, isOnLoad, whichLanguage) {
 			walletImportFormat: "WALLET IMPORT FORMAT",
 			withdraw: "PRIVATE KEY / WITHDRAW",
 			backLongTextFontSize: "9px",
-			backPaperWallet: "Phore PAPER WALLET",
+			backPaperWallet: "Curium PAPER WALLET",
 			backAmount: "Amount Added",
 			backDate: "Date",
 			backNotes: "Notes:",
-			backInst1: "To deposit additional funds to this paper wallet, send PHR's to its public address, anytime.",
+			backInst1: "To deposit additional funds to this paper wallet, send CRU's to its public address, anytime.",
 			backInst2: "Verify your balance by searching for the public address using https://chainz.cryptoid.info/phr/",
 			backInst3: "<strong>Do not reveal the private key</strong> until you are ready to import the balance on this wallet to a bitcoin client, exchange, or online wallet.",
-			backInst4: "When withdrawing your funds from this wallet you should remove the <strong>ENTIRE BALANCE</strong>. If you attempt to spend only some of the funds you will likely lose the remaining PHR's forever.<br />",
+			backInst4: "When withdrawing your funds from this wallet you should remove the <strong>ENTIRE BALANCE</strong>. If you attempt to spend only some of the funds you will likely lose the remaining CRU's forever.<br />",
 		}
 
 /*		'chinese': {
@@ -13722,8 +13722,8 @@ function setDesign (whichDesign, isOnLoad, whichLanguage) {
 	// now deal with JPG-style backgrounds, and apply instructions to default design
 
 	if (whichDesign == 'default') {
-		var myFront = './images/front-300dpi-PHR.jpg';
-		var myBack = './images/back-300dpi-PHR.jpg';
+		var myFront = './images/front-300dpi-CRU.jpg';
+		var myBack = './images/back-300dpi-CRU.jpg';
 		var myPreview = './images/finished-sample-sealed.jpg';
 		// setup proper back text translation & controls
 		document.getElementById('backTextControl').style.display='block';
@@ -13786,7 +13786,7 @@ function setDenomination(valueAndUnit) {
 }
 
 // disable unit testing if we are not working with regular old bitcoin
-if (window.currencyName != 'Phore') document.getElementById('footerlabeltests').style.display='none';
+if (window.currencyName != 'Curium') document.getElementById('footerlabeltests').style.display='none';
 </script>
 
 </body>
